@@ -1,0 +1,206 @@
+import React from 'react'
+import { ShoppingCart, Heart, Star } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+
+
+
+const products = [
+  {
+    id: 1,
+    name: 'Industrial Storage Trolley',
+    description: 'Heavy-duty storage trolley with multiple drawers for industrial use',
+    price: 599.99,
+    image: 'https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&q=80&w=400',
+    rating: 4.5,
+  },
+  {
+    id: 2,
+    name: 'FIPL-Powerpack Trolley',
+    description: 'Professional powerpack trolley with advanced hydraulic system',
+    price: 899.99,
+    image: 'https://images.unsplash.com/photo-1578593195423-89473d7499be?auto=format&fit=crop&q=80&w=400',
+    rating: 4.8,
+  },
+  {
+    id: 3,
+    name: 'FIPL 216 Trolley',
+    description: 'Versatile industrial trolley for gas cylinder transportation',
+    price: 449.99,
+    image: 'https://images.unsplash.com/photo-1518466088889-82466d82e1ba?auto=format&fit=crop&q=80&w=400',
+    rating: 4.3,
+  },
+  {
+    id: 4,
+    name: 'FIPL 215 Trolley',
+    description: 'Compact and durable material handling trolley',
+    price: 349.99,
+    image: 'https://images.unsplash.com/photo-1594970484107-070a0e0c1339?auto=format&fit=crop&q=80&w=400',
+    rating: 4.6,
+  },
+  {
+    id: 3,
+    name: 'FIPL 216 Trolley',
+    description: 'Versatile industrial trolley for gas cylinder transportation',
+    price: 449.99,
+    image: 'https://images.unsplash.com/photo-1518466088889-82466d82e1ba?auto=format&fit=crop&q=80&w=400',
+    rating: 4.3,
+  },
+  {
+    id: 4,
+    name: 'FIPL 215 Trolley',
+    description: 'Compact and durable material handling trolley',
+    price: 349.99,
+    image: 'https://images.unsplash.com/photo-1594970484107-070a0e0c1339?auto=format&fit=crop&q=80&w=400',
+    rating: 4.6,
+  },
+
+  {
+    id: 3,
+    name: 'FIPL 216 Trolley',
+    description: 'Versatile industrial trolley for gas cylinder transportation',
+    price: 449.99,
+    image: 'https://images.unsplash.com/photo-1518466088889-82466d82e1ba?auto=format&fit=crop&q=80&w=400',
+    rating: 4.3,
+  },
+  {
+    id: 4,
+    name: 'FIPL 215 Trolley',
+    description: 'Compact and durable material handling trolley',
+    price: 349.99,
+    image: 'https://images.unsplash.com/photo-1594970484107-070a0e0c1339?auto=format&fit=crop&q=80&w=400',
+    rating: 4.6,
+  },
+  {
+    id: 3,
+    name: 'FIPL 216 Trolley',
+    description: 'Versatile industrial trolley for gas cylinder transportation',
+    price: 449.99,
+    image: 'https://images.unsplash.com/photo-1518466088889-82466d82e1ba?auto=format&fit=crop&q=80&w=400',
+    rating: 4.3,
+  },
+
+
+];
+
+const Hydraulic = () => {
+ 
+  return (
+    <>
+     <div className='gap-x-8'>
+
+<div className="relative h-[200px] bg-red-400   ">
+  <div className="absolute top-2 left-2 w-full h-full">
+
+  
+    <img 
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9emqXbcigb5mA548XAap4Od4aca53lyr79Q&s"
+      alt="Pallet Trucks"
+      className="w-90 h-45  object-cover center"
+      />
+      </div>
+    <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center">
+      <div className="container mx-auto px-4 py-16 text-end text-white">
+        <h1 className="text-white text-5xl font-bold">Hydraulic Ramp</h1>
+      </div>
+      </div>
+    </div>
+  </div>
+    
+    
+
+            <button className="relative px-10 py-3 bg-gradient-to-r from-red-500 to-orange-500 rounded-full shadow-xl group-hover:shadow-2xl group-hover:shadow-red-600 shadow-red-600 uppercase font-serif tracking-widest overflow-hidden group text-transparent cursor-pointer z-10 after:absolute after:rounded-full after:bg-red-200 after:h-[85%] after:w-[95%] after:left-1/2 after:top-1/2 after:-translate-x-1/2 after:-translate-y-1/2 hover:saturate-[1.15] active:saturate-[1.4]">
+            Button
+            <p className="absolute z-40 font-semibold bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent top-1/2 left-1/2 -translate-x-1/2 group-hover:-translate-y-full h-full w-full transition-all duration-300 -translate-y-[30%] tracking-widest">
+              WELCOME
+            </p>
+            <p className="absolute z-40 top-1/2 left-1/2 bg-gradient-to-r from-red-700 to-orange-700 bg-clip-text text-transparent -translate-x-1/2 translate-y-full h-full w-full transition-all duration-300 group-hover:-translate-y-[40%] tracking-widest font-extrabold">
+              Us
+            </p>
+            <svg className="absolute w-full h-full scale-x-125 rotate-180 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 group-hover:animate-none animate-pulse group-hover:-translate-y-[45%] transition-all duration-300" viewBox="0 0 2400 800" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="sssurf-grad" y2="100%" x2="50%" y1="0%" x1="50%">
+                  <stop offset="0%" stopOpacity={1} stopColor="hsl(37, 99%, 67%)" />
+                  <stop offset="100%" stopOpacity={1} stopColor="hsl(316, 73%, 52%)" />
+                </linearGradient>
+              </defs>
+              <g transform="matrix(1,0,0,1,0,-91.0877685546875)" fill="url(#sssurf-grad)">
+                <path opacity="1" transform="matrix(1,0,0,1,0,245)" d="M 0 305.9828838196134 Q 227.6031525693441 450 600 302.17553022897005 Q 1010.7738828515054 450 1200 343.3024459932802 Q 1379.4406250195766 450 1800 320.38902780838214 Q 2153.573162029817 450 2400 314.38564046970816 L 2400 800 L 0 800 L 0 340.3112176762882 Z" />
+              </g>
+            </svg>
+            <svg className="absolute w-full h-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-[30%] group-hover:-translate-y-[33%] group-hover:scale-95 transition-all duration-500 z-40 fill-red-500" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0,288L9.2,250.7C18.5,213,37,139,55,133.3C73.8,128,92,192,111,224C129.2,256,148,256,166,256C184.6,256,203,256,222,250.7C240,245,258,235,277,213.3C295.4,192,314,160,332,170.7C350.8,181,369,235,388,229.3C406.2,224,425,160,443,122.7C461.5,85,480,75,498,74.7C516.9,75,535,85,554,101.3C572.3,117,591,139,609,170.7C627.7,203,646,245,665,256C683.1,267,702,245,720,245.3C738.5,245,757,267,775,266.7C793.8,267,812,245,831,234.7C849.2,224,868,224,886,218.7C904.6,213,923,203,942,170.7C960,139,978,85,997,53.3C1015.4,21,1034,11,1052,48C1070.8,85,1089,171,1108,197.3C1126.2,224,1145,192,1163,197.3C1181.5,203,1200,245,1218,224C1236.9,203,1255,117,1274,106.7C1292.3,96,1311,160,1329,170.7C1347.7,181,1366,139,1385,128C1403.1,117,1422,139,1431,149.3L1440,160L1440,320L1430.8,320C1421.5,320,1403,320,1385,320C1366.2,320,1348,320,1329,320C1310.8,320,1292,320,1274,320C1255.4,320,1237,320,1218,320C1200,320,1182,320,1163,320C1144.6,320,1126,320,1108,320C1089.2,320,1071,320,1052,320C1033.8,320,1015,320,997,320C978.5,320,960,320,942,320C923.1,320,905,320,886,320C867.7,320,849,320,831,320C812.3,320,794,320,775,320C756.9,320,738,320,720,320C701.5,320,683,320,665,320C646.2,320,628,320,609,320C590.8,320,572,320,554,320C535.4,320,517,320,498,320C480,320,462,320,443,320C424.6,320,406,320,388,320C369.2,320,351,320,332,320C313.8,320,295,320,277,320C258.5,320,240,320,222,320C203.1,320,185,320,166,320C147.7,320,129,320,111,320C92.3,320,74,320,55,320C36.9,320,18,320,9,320L0,320Z" fillOpacity={1} />
+            </svg>
+          </button>
+      
+      
+          <div className="min-h-screen bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
+              <h1 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+                Featured Products
+              </h1>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                {products.map((product) => (
+                  <div
+                    key={product.id}
+                    className="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl"
+                  >
+                    <div className="relative">
+                      <img
+                        src={product.image}
+                        alt={product.name}
+                        className="w-full h-48 object-cover"
+                      />
+                      <button className="absolute top-4 right-4 p-2 rounded-full bg-white/80 hover:bg-white transition-colors">
+                        <Heart className="w-5 h-5 text-gray-600 hover:text-red-500 transition-colors" />
+                      </button>
+                    </div>
+                    <div className="p-4">
+                      <h2 className="text-lg font-semibold text-gray-800 mb-2">
+                        {product.name}
+                      </h2>
+                      <p className="text-sm text-gray-600 mb-4">
+                        {product.description}
+                      </p>
+                      <div className="flex items-center mb-4">
+                        <div className="flex items-center">
+                          {[...Array(5)].map((_, index) => (
+                            <Star
+                            key={index}
+                              className={`w-4 h-4 ${
+                                index < Math.floor(product.rating)
+                                  ? 'text-yellow-400 fill-current'
+                                  : 'text-gray-300'
+                              }`}
+                            />
+                          ))}
+                        </div>
+                        <span className="text-sm text-gray-600 ml-2">
+                          ({product.rating})
+                        </span>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <span className="text-xl font-bold text-gray-900">
+                          ${product.price}
+                        </span>
+                        <button className="flex items-center space-x-2 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                          <ShoppingCart className="w-5 h-5" />
+                    <NavLink to="/Cart" >   <span  style={{color:"black"}}>Add to Cart</span></NavLink>   
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+          <br />
+      
+         
+      
+    
+      </>
+  )
+}
+
+export default Hydraulic

@@ -1,0 +1,13 @@
+.active{
+    font-weight: 800;
+  color: tomato;
+  text-decoration: none;
+
+
+
+}
+.active:hover{
+ color: cadetblue;
+    font-size: smaller;
+    
+}
